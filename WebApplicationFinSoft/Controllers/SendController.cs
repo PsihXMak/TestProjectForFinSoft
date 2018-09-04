@@ -13,13 +13,13 @@ namespace WebApplicationFinSoft.Controllers
     public class SendController : Controller
     {
         // GET: send
-        public string Index(string message)
+        public string Index(string token, string user, string message)
         {
 
             var parameters = new NameValueCollection
             {
-                { "token", "aj1ff5wt6im6sfgpivye8jv3eeeu1o" },
-                { "user", "uuseqg2axy7dn69diifh7urax1sinj" },
+                { "token", token },
+                { "user", user },
                 { "message", message }
             };
 
