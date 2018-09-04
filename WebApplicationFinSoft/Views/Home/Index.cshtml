@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<form method="post" action="send">
+    <input type="hidden" value="@ViewBag.BookId" name="BookId" />
+    <table>
+        <tr>
+            <td><p>Сообщение :</p></td>
+            <td><input type="text" name="message" /> </td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Отправить" /> </td>
+            <td></td>
+        </tr>
+    </table>
+</form>
